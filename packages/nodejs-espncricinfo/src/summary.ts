@@ -10,7 +10,7 @@ function getTextFromChildTag(el: cheerio.Element, tagName: string) {
   if (textNode?.type === "text") return textNode.data;
 }
 
-async function getSummary() {
+export async function getSummary() {
   const response = await fetch("http://static.cricinfo.com/rss/livescores.xml");
 
   const data = await response.text();
