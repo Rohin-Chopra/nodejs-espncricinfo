@@ -35,5 +35,7 @@ export class Summary {
         };
       })
       .toArray();
+
+    return summaries;
   }
 }
